@@ -4,7 +4,7 @@
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://php-backend-demo-party.pcap.at/'
+    CURLOPT_URL => 'http://php-backend-demo-party.pcap.at/?name=Demo'
 	));
   $result = curl_exec($curl);
   curl_close($curl);
