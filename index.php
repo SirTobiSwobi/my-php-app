@@ -1,8 +1,13 @@
 <?php 
   //echo "Hello World\n"; 
   
-  $curl = curl_init('http://php-backend-demo-party.pcap.at/');
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'http://php-backend-demo-party.pcap.at/'
+	));
   $result = curl_exec($curl);
+  curl_close($curl);
 
 ?>
 <!DOCTYPE HTML>
