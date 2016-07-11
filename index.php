@@ -4,7 +4,7 @@
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://php-backend-demo-party.pcap.at/?name=SolArC'
+    CURLOPT_URL => 'http://demo-backend-demo.pcap.at/?name=BigData'
 	));
   $result = curl_exec($curl);
   curl_close($curl);
